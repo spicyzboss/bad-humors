@@ -1,10 +1,10 @@
 import { Component, JSXElement } from "solid-js";
 
-type BlockProps = {
+type RowProps = {
   children: JSXElement;
 }
 
-const Block: Component<BlockProps> = ({ children }) => {
+const Row: Component<RowProps> = ({ children }) => {
   return (
     <div class="flex gap-2">
       { children }
@@ -12,4 +12,4 @@ const Block: Component<BlockProps> = ({ children }) => {
   )
 };
 
-export default Block;
+export default Row;
