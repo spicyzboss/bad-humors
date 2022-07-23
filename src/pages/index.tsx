@@ -52,7 +52,7 @@ const HomePage: Component = () => {
               (v, i) => {
                 let color: BlockColor = "gray";
                 if (!v) {
-                  if (i() === date().dayOfYear()) {
+                  if (i() === date().dayOfYear() - 1) {
                     color = 'yellow';
                   }
                 } else {
