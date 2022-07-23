@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dayjs": "^1.11.4",
     "solid-app-router": "^0.4.1",
     "solid-js": "^1.4.7"
   },

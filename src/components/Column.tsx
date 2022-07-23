@@ -1,12 +1,12 @@
-import { Component, JSXElement } from "solid-js"
+import type { Component, JSXElement } from "solid-js"
 
 type ColumnProps = {
-  children: JSXElement;
+  children?: JSXElement;
 }
 
 const Column: Component<ColumnProps> = ({ children }) => {
   return (
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-1 flex-wrap max-h-44 w-full justify-center items-center">
       { children }
     </div>
   )

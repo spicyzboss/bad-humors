@@ -14,6 +14,8 @@ export default defineConfig({
       '@layouts': 'src/layouts',
       '@config': 'src/config',
       '@pages': 'src/pages',
+      '@helper': 'src/helper',
+      'types': 'src/types'
     }
   }
 });
