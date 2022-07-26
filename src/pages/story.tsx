@@ -5,7 +5,7 @@ import anime from 'animejs';
 const StoryPage: Component = () => {
   const [time, setTime] = createSignal<number>(0);
   const [begin, setBegin] = createSignal<boolean>(false);
-  const timeDelay = 6000;
+  const timeDelay = 4500;
 
   const beginTime = setInterval(() => {
     setTime(time()+100);
@@ -17,7 +17,7 @@ const StoryPage: Component = () => {
   }, 100);
 
   const wordlists = [
-    "Nice to meet you.",
+    "👋 Nice to meet you.",
     "How are you today?",
     "Can you tell me about it?",
   ];
@@ -25,8 +25,8 @@ const StoryPage: Component = () => {
   onMount(() => {
     const messageAnimation = anime({
       targets: '.message',
-      duration: 1500,
-      endDelay: timeDelay/2 - 1500,
+      duration: 1000,
+      endDelay: timeDelay/2 - 1000,
       easing: 'easeInQuint',
       direction: 'alternate',
       opacity: '1',
